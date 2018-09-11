@@ -60,7 +60,7 @@ if torch.cuda.is_available():
 
 optimizer = model.get_optimizer(is_adam=False)
 avg_loss = AverageValueMeter()
-ma20_loss = MovingAverageValueMeter(windowsize=20)
+
 model.train()
 
 
